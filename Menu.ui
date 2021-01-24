@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1107</width>
+    <height>851</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Functions&lt;/p&gt;&lt;p&gt;1) (x-2)&lt;span style=&quot; vertical-align:super;&quot;&gt;2 &lt;/span&gt;+(y-2)&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt; [Circle]&lt;/p&gt;&lt;p&gt;2) 0.26(x&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt;+y&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt;)-0.48xy [Matyas Function]&lt;/p&gt;&lt;p&gt;3) (1-x)&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt;+100(y-x&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt;)&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt; [Rosenbrock Valley Function]&lt;/p&gt;&lt;p&gt;4) (1.5-x+xy)&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt;+(2.25-x+xy&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt;)&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt;+(2.625-x+xy&lt;span style=&quot; vertical-align:super;&quot;&gt;3&lt;/span&gt;)&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt; [Beale Function]&lt;/p&gt;&lt;p&gt;5) (x+2y-7)&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt;+(2x_y-5)&lt;span style=&quot; vertical-align:super;&quot;&gt;2&lt;/span&gt;  [Booth Function]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Function</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="funNum">
+          <property name="inputMask">
+           <string>9</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>Enter function number</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>x value</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="xVal">
+          <property name="inputMask">
+           <string>009</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="maxLength">
+           <number>3</number>
+          </property>
+          <property name="frame">
+           <bool>true</bool>
+          </property>
+          <property name="placeholderText">
+           <string>x value</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>y value</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="yVal">
+          <property name="inputMask">
+           <string>009</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>y value</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Delta</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QComboBox" name="delVal">
+          <item>
+           <property name="text">
+            <string>0.5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0.05</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0.005</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Epsilon</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QComboBox" name="epiVal">
+          <item>
+           <property name="text">
+            <string>0.1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0.01</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0.001</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>0.0001</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Rotations</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QComboBox" name="rot">
+          <item>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_10">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Iterations</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="nVal">
+          <property name="inputMask">
+           <string>009</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>n value</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="subBut">
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_9">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <widget class="QTextBrowser" name="op"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
